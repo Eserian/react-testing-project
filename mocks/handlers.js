@@ -60,4 +60,7 @@ export default [
       ctx.json(newList),
     );
   }),
+  rest.delete('/api/v1/lists/:id', (req, res, ctx) => res(
+    ctx.status(204),
+  )),
 ];
