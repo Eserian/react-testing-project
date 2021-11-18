@@ -1,8 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/Eserian/frontend-testing-react-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/Eserian/frontend-testing-react-project-lvl2/actions)",
-  "main": "index.js",
+  "description": "Frontend testing project lvl2",
   "scripts": {
     "test": "npx jest --bail"
   },

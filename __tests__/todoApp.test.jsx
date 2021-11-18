@@ -2,8 +2,11 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import App from '@hexlet/react-todo-app-with-backend';
 import { render, screen, waitFor } from '@testing-library/react';
+import { setupServer } from 'msw/node';
 import userEvent from '@testing-library/user-event';
-import server from '../mocks/server';
+import handlers from '../mocks/handlers';
+
+const server = setupServer(...handlers);
 
 beforeAll(() => server.listen());
 afterEach(() => server.resetHandlers());
